@@ -1,0 +1,34 @@
+.tab {
+    background: #eee;
+    cursor: pointer;
+    padding: 10px 15px 10px 20px;
+    display: block;
+}
+
+.radio-option:checked + .tab {
+    background: #000000;
+    color: #ffffff;
+}
+
+.radio-option {
+    display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+}
+
+.radio-option:checked + label + .tab-content {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .tab {
+    float: left;
+    }
+    .tab-content {
+      float: right;
+      margin : 2.5em 0 0 -100%;
+    }
+}
