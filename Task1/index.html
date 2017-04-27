@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<link rel="css">
+  <body>
+      <input id="tab1" class="radio-option" name="tab-choice" type="radio"/>
+      <label class="tab" for="tab1">title 1</label>
+      <div class="tab-content">
+        <h4>Heading 1</h4>
+        Notice that we’ve renamed the variable product to products, and we’ve changed the type to Product[].
+        The [] characters at the end mean we want products to be an Array of Products. We also could have written this as:
+        Array.Now that our InventoryApp holds an array of Products. Let’s create some Products in the constructor:
+      </div>
+      <input id="tab2" class="radio-option" name="tab-choice" type="radio"/>
+      <label class="tab" for="tab2"> title 2 which is really long</label>
+      <div class="tab-content">
+        <h4>Heading 2</h4>
+        Now that we have our top-level application component, let’s write the ProductsList component,
+        which will render a list of product rows.We want to allow the user to select one Product and
+        we want to keep track of which Product is the currently selected one. The ProductsList component
+        is a great place to do this because it “knows” all of the Products at the same time.Let’s write the ProductsList 
+        Component in three steps:
+      </div>
+      <input id="tab3" class="radio-option" name="tab-choice" type="radio"/>
+      <label class="tab" for="tab3">title 3</label>
+      <div class="tab-content">
+        <h4>Heading 3</h4>
+        Why is that wrong? Well, because in the case where your browser loads that template before Angular has run,
+        your browser will try to load the image with the literal string {{ product.imageUrl }} and then it will get
+        a 404 not found, which can show a broken image on your page until Angular runs.By using the [src] attribute,
+        we’re telling Angular that we want to use the [src] input on this img tag. Angular will then replace the value
+        of the src attribute once the expression is resolved. The thing to note about the ProductDepartment Component is
+        the ngFor and the span tag. Our ngFor loops over product.department and assigns each department string to name.
+        The new part is the second expression that says: let i=index. This is how you get the iteration number out of ngFor.
+        In the span tag, we use the i variable to determine if we should show the greater-than > symbol. The idea is that given a
+        department, we want to show the department string like:
+      </div>
+  </body>
+</html>
