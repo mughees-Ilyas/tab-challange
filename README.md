@@ -30,7 +30,7 @@ Code : available under task1 folder. ( NO JAVASCRIPT WAS USED)
 * Note: I realize this may be more complicated than just using JS for both cases, I have done this mainly to get as close to
  the instructions as possible
 
-## Part 2
+## Task 2
 Load the content via javascript request
 
 ### Link
